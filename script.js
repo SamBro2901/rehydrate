@@ -58,5 +58,5 @@ function getInputValue() {
   var soil = document.getElementById("soilType");
   var crop = document.getElementById("cropType");
 
-  alert("You have selected "+crop.options[crop.selectedIndex].text+" crop, grown in "+soil.options[soil.selectedIndex].text+" soil.\nMoisture Level required: "+moistVal[soil.selectedIndex-1][crop.selectedIndex]);
+  document.getElementById("output").innerHTML = "You have selected "+crop.options[crop.selectedIndex].text+" crop, grown in "+soil.options[soil.selectedIndex].text+" soil.\n\nMoisture Level required: <b>"+moistVal[soil.selectedIndex-1][crop.selectedIndex]+"</b>";
 }
