@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <h1>Efficient Irrigation System</h1>
+  <p>
+    <select name="soils" id="soilType" onchange="populateCrops()">
+      <option value="" disabled selected>Select Soil Type</option>
+      <option value="alluvial">Alluvial</option>
+      <option value="black">Black</option>
+      <option value="laterite">Laterite</option>
+      <option value="mountain">Mountain</option>
+      <option value="desert">Desert</option>
+      <option value="saline">Saline</option>
+      <option value="marshy">Marshy</option>
+    </select>
+    <select name="crop" id="cropType">
+      <option value="" disabled selected>Select an option</option>
+    </select>
+    <button type="button" onclick="getInputValue()">Submit</button>
+  </p>
+
+  <script src="script.js">
+    //<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js">
+    //var socket = io();
+  </script>
+
+</body>
+
+</html>
