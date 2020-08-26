@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="icon" href="https://i.imgur.com/RLNG2pZ.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<head>
+  <title>Project Irrigate</title>
+</head>
+
 <body>
-  <h1>Efficient Irrigation System</h1>
-  <p>
+  <div class="header">
+    <h1>Advanced Efficient Irrigation System</h1>
+  </div>
+  <div class="input">
     <select name="soils" id="soilType" onchange="populateCrops()">
       <option value="" disabled selected>Select Soil Type</option>
       <option value="alluvial">Alluvial</option>
@@ -20,7 +27,8 @@
       <option value="" disabled selected>Select an option</option>
     </select>
     <button type="button" onclick="getInputValue()">Submit</button>
-  </p>
+    <p id="output"></p>
+  </div>
 
   <script src="script.js">
     //<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js">
