@@ -2,7 +2,7 @@
 <html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="/static/css/style.css">
 
 <head>
   <title>Project Irrigate</title>
@@ -26,14 +26,12 @@
     <select name="crop" id="cropType">
       <option value="" disabled selected>Select an option</option>
     </select>
-    <button type="button" onclick="getInputValue()">Submit</button>
+    <button type="button" onclick="submitValue()">Submit</button>
     <p id="output"></p>
   </div>
 
-  <script src="script.js">
-    //<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js">
-    //var socket = io();
-  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+  <script src="/static/script.js"></script>
 
 </body>
 
